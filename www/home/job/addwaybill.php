@@ -11,7 +11,7 @@ $mysql = new DB();
 // 获取当前的最大运单号
 $sql = "SELECT MAX(waybill_no) as MAX_waybill_no FROM `dw_0000`;";
 $data = $mysql->get_one ( $sql );
-//var_dump ( $data );
+var_dump ( $data );
 //echo $data ['MAX_waybill_no'];//OK返回类型为数值
 //开启事务
 $sql_begin="begin;";

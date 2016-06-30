@@ -1,6 +1,6 @@
 <?php 
 //使用mycat中间件的配置，读写分离
-    $db_config["hostname"] = "10.10.11.174"; //数据库ip和端口，默认3306
+    $db_config["hostname"] = "10.10.11.174:3306"; //数据库ip和端口，默认3306
     $db_config["username"] = "ueEbNyrKpv3cwluM"; //用户名
     $db_config["password"] = "peuFVaywBXKLgkEjI"; //密码
     $db_config["database"] = "JlRi2kwOsVALd4jn"; //数据库schema
