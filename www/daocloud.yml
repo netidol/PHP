@@ -6,9 +6,9 @@ test:
     - mysql
 
   env:
-    - MYSQL_USERNAME = "ueEbNyrKpv3cwluM"
-    - MYSQL_PASSWORD = "peuFVaywBXKLgkEjI"
-    - MYSQL_INSTANCE_NAME = "JlRi2kwOsVALd4jn"
+    - MYSQL_USERNAME = "root"
+    - MYSQL_PASSWORD = ""
+    - MYSQL_INSTANCE_NAME = "test"
 
   install:
     - docker-php-ext-install pdo_mysql
