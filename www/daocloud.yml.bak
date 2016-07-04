@@ -12,7 +12,6 @@ test:
 
   install:
     - docker-php-ext-install php_pdo_mysql
-    - docker-php-ext-install php_pdo
 
   script:
     - phpunit DBTest
