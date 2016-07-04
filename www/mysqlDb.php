@@ -1,6 +1,7 @@
 <?php
 require('Helper.php');
 require('./MySqlDB/config.db.php');
+$get=new env();
 
 Class DB {
  
@@ -8,10 +9,10 @@ Class DB {
     private $handle;
     private $is_log;
     private $time;
-	$serverName = env("MYSQL_PORT_3306_TCP_ADDR", "");
-    $databaseName = env("MYSQL_INSTANCE_NAME", "");
-    $username = env("MYSQL_USERNAME", "");
-    $password = env("MYSQL_PASSWORD", "");
+	$serverName = $get("MYSQL_PORT_3306_TCP_ADDR", "");
+    $databaseName = $get("MYSQL_INSTANCE_NAME", "");
+    $username = $get("MYSQL_USERNAME", "");
+    $password = $get("MYSQL_PASSWORD", "");
     //构造函数
     public function __construct() {
         $this->time = $this->microtime_float();
