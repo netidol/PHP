@@ -1,6 +1,6 @@
 <?php
 
-require('DB.php');
+require('mysqlDb.php');
 
 $db = new DB();
 
